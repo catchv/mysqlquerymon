@@ -15,6 +15,8 @@ go build
 ./cmd -addr=127.0.0.1 -port=20701 -user=root -password=Root12#$ -eventuser=gorm
 ```
 
+```bash
+$ ./cmd -help
   -addr string
         mysql ip (default "127.0.0.1")
   -eventuser string
@@ -25,6 +27,9 @@ go build
         mysql port (default "3306")
   -user string
         mysql user (default "root")
+```
+
+
 
 ```bash
 $ ./cmd -addr=127.0.0.1 -port=20701 -user=root -password=Root12#$ -eventuser=gorm
