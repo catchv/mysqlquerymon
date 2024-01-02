@@ -1,12 +1,12 @@
 Mysql mysql.general_log table monitor
 
-mysql variables
+* mysql variables
 ```SQL
 SET GLOBAL general_log = 'ON';
 SET GLOBAL log_output = 'TABLE';
 ```
 
-
+* build
 ```bash
 go mod tidy
 cd cmd
@@ -15,6 +15,7 @@ go build
 ./cmd -addr=127.0.0.1 -port=20701 -user=root -password=Root12#$ -eventuser=gorm
 ```
 
+* Shell
 ```bash
 $ ./cmd -help
   -addr string
@@ -30,7 +31,7 @@ $ ./cmd -help
 ```
 
 
-
+* Sample
 ```bash
 $ ./cmd -addr=127.0.0.1 -port=20701 -user=root -password=Root12#$ -eventuser=gorm
 addr: 127.0.0.1
